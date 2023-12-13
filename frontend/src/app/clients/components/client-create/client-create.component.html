@@ -1,0 +1,36 @@
+<form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="rut">RUT</label>
+    <input type="text" id="rut" formControlName="rut">
+  </div>
+  <div>
+    <label for="first_name">Nombre</label>
+    <input type="text" id="first_name" formControlName="first_name">
+  </div>
+  <div>
+    <label for="paternal_lastname">Apellido paterno</label>
+    <input type="text" id="paternal_lastname" formControlName="paternal_lastname">
+  </div>
+  <div>
+    <label for="maternal_lastname">Apellido materno</label>
+    <input type="text" id="maternal_lastname" formControlName="maternal_lastname">
+  </div>
+  <div>
+    <label for="level">Nivel:</label>
+    <select formControlName="level" id="level">
+      <option value="" disabled>Nivel</option>
+      <option *ngFor="let level of levelOptions" [value]="level">{{ level }}</option>
+    </select>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="text" id="email" formControlName="email">
+  </div>
+  <div>
+    <label for="mobil">Mobil</label>
+    <input type="text" id="mobil" formControlName="mobil">
+  </div>
+  <div>
+    <button type="submit">Crear Cliente</button>
+  </div>
+</form>

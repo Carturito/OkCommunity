@@ -1,0 +1,33 @@
+OkCommunity/
+│
+├── backend/  # Todo el código del servidor Node.js
+│   ├── node_modules/
+│   ├── src/
+│   │   ├── config/  # Configuración de la base de datos y otros ajustes
+│   │   │   └── dbConfig.js
+│   │   ├── controllers/  # Controladores para manejar la lógica del negocio
+│   │   │   └── clientsController.js
+│   │   ├── models/  # Modelos de datos (opcional, para ORM)
+│   │   ├── routes/  # Rutas de la API
+│   │   │   └── clientRoutes.js
+│   │   └── app.js  # Punto de entrada principal del servidor
+│   ├── .env  # Variables de entorno
+│   ├── package.json
+│   └── package-lock.json
+│
+├── frontend/  # Todo el código del cliente Angular
+│   ├── node_modules/
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── clients/
+│   │   │   │   ├── client-list/  # Componente para listar clientes
+│   │   │   │   ├── client-create/  # Componente para crear un cliente
+│   │   │   │   ├── client-edit/  # Componente para editar un cliente
+│   │   │   │   └── client.service.ts  # Servicio para interactuar con la API
+│   │   │   └── ...
+│   │   └── ...
+│   ├── angular.json
+│   ├── package.json
+│   └── package-lock.json
+│
+└── README.md  # Documentación del proyecto
