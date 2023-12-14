@@ -8,12 +8,10 @@ import { ClientService } from '../../services/client.service';
   styleUrls: ['./client-create.component.css']
 })
 export class ClientCreateComponent implements OnInit {
-  clientForm!: FormGroup;
+  clientForm: FormGroup;
   levelOptions: number[] = [1, 2, 3]; // Array de opciones para el nivel
 
-  constructor(private fb: FormBuilder, private clientService: ClientService) { }
-
-  ngOnInit(): void {
+  constructor(private fb: FormBuilder, private clientService: ClientService) { 
     this.clientForm = this.fb.group({
       rut: [''],
       first_name: [''],
@@ -24,6 +22,9 @@ export class ClientCreateComponent implements OnInit {
       email: [''],
       mobile_number: [''],
     });
+  }
+
+  ngOnInit(): void {
   }
 
   onSubmit() {

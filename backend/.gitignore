@@ -1,0 +1,26 @@
+# Dependencias
+/node_modules
+
+# Archivos de log
+npm-debug.log
+yarn-error.log
+
+# Directorio de salida de compilación (si lo usas)
+/dist
+
+# Archivo de configuración del entorno
+.env
+
+# Archivos de caché
+.cache
+.next
+
+# Directorios de configuración de IDE/editor
+/.vscode
+/.idea
+/*.sublime-project
+/*.sublime-workspace
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
